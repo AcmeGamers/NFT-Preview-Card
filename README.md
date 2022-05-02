@@ -32,7 +32,7 @@ Normally I would use [Lightshot](https://app.prntscr.com/) or [Sharex](https://g
 
 ### Links
 
-- Solution URL: [Front-End Mentor](https://www.frontendmentor.io/solutions/qr-code-challenge-rJ5cwo3S5)
+- Solution URL: [Front-End Mentor](https://www.frontendmentor.io/solutions/nft-card-component-rJg2i3hS5)
 - Live Site URL: [Github](https://github.com/AcmeGamers/NFT-Preview-Card)
 
 ## My process
