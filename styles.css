@@ -1,0 +1,79 @@
+:root {
+  /* Background */
+  --bg: hsl(217, 54%, 11%);
+  --card_bg: hsl(216, 50%, 16%);
+
+  /* Text */
+  --heading-color: #fff;
+  --font-color: #9a9da4;
+  --etherum: hsl(178, 100%, 50%);
+  --cyan: hsl(215, 51%, 70%);
+
+  /* widths */
+  --desktop-card-width: 275px;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--font-color);
+  font-family: "Outfit", system-ui;
+  margin: 0;
+}
+
+/* The Card */
+.card {
+  background: var(--card_bg);
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 0px #00000024;
+
+  padding: 20px 10px;
+  width: var(--desktop-card-width);
+}
+
+/* The Elements */
+h1,
+p {
+  width: calc(var(--desktop-card-width) - 20px);
+  text-align: center;
+}
+
+h1 {
+  color: var(--heading-color);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 0;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+hr {
+  color: hsl(215, 32%, 27%);
+}
+/* Custom Styling */
+
+.flex {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hr-center {
+  align-items: center;
+}
+.vr-center {
+  justify-content: center;
+}
+
+.screen_height {
+  height: 100vh;
+}
