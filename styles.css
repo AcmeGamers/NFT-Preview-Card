@@ -57,6 +57,17 @@ hr {
   color: var(--etherum);
 }
 
+.user p strong,
+h1 {
+  color: #fff;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+.user p strong:hover,
+h1:hover {
+  color: var(--etherum);
+}
+
 .ethereum p,
 .date p,
 .user p {
