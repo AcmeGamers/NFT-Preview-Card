@@ -43,20 +43,59 @@ p {
   font-weight: 100;
 }
 
-img {
+hr {
+  height: 1px;
+  margin: 0;
+  border: none;
+  width: 100%;
+  background-color: hsl(215, 32%, 27%);
+}
+
+/* Component Styling */
+.product {
+  background: url(images/image-equilibrium.jpg);
+  background-size: contain;
+  border-radius: 10px;
   width: 250px;
+  height: 250px;
+}
+.product:before,
+.product:after {
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: inherit;
+  width: inherit;
+  opacity: 0;
+  position: absolute;
+  transition: 0.5s ease all;
+}
+.product:before {
+  background: var(--etherum);
   border-radius: 10px;
 }
 
-hr {
-  color: hsl(215, 32%, 27%);
+.product:after {
+  background: url("./images/icon-view.svg");
+  height: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-/* component styling */
+.product:hover:before {
+  opacity: 0.6;
+}
+.product:hover:after {
+  opacity: 1;
+}
+
 .ethereum p {
   color: var(--etherum);
 }
 
+.user {
+  margin-top: 10px;
+}
 .user p strong,
 h1 {
   color: #fff;
