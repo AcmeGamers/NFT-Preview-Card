@@ -31,12 +31,6 @@ body {
 }
 
 /* The Elements */
-h1,
-p {
-  width: calc(var(--desktop-card-width) - 20px);
-  text-align: center;
-}
-
 h1 {
   color: var(--heading-color);
   font-size: 20px;
@@ -46,7 +40,7 @@ h1 {
 
 p {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 img {
@@ -57,23 +51,63 @@ img {
 hr {
   color: hsl(215, 32%, 27%);
 }
+
+/* component styling */
+.ethereum p {
+  color: var(--etherum);
+}
+
+.ethereum p,
+.date p,
+.user p {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.ethereum img,
+.date img,
+.user img {
+  height: fit-content;
+}
+
+.user img {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
 /* Custom Styling */
 
 .flex {
   display: flex;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
 .column {
   display: flex;
   flex-direction: column;
 }
 
-.hr-center {
+.vr-center {
   align-items: center;
 }
-.vr-center {
+.hr-center {
   justify-content: center;
 }
 
-.screen_height {
+.screen-height {
   height: 100vh;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.full-element-width {
+  width: -webkit-fill-available;
 }
